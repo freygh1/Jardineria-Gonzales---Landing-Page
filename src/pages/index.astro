@@ -1,6 +1,9 @@
 ---
 import "../styles/global.css";
 const businessName = "Jardinería Gonzales";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import AboutUsSection from "../components/AboutUsSection.astro";
 ---
 
 <html lang="es">
@@ -14,8 +17,12 @@ const businessName = "Jardinería Gonzales";
 		<meta name="generator" content={Astro.generator} />
 		<title>{businessName}</title>
 	</head>
-	<body class="flex">
-		<p>a</p>
-		<b>a</b>
+	<body class="min-h-screen">
+		<Header>
+			<Hero />
+		</Header>
+		<main>
+			<AboutUsSection />
+		</main>
 	</body>
 </html>
