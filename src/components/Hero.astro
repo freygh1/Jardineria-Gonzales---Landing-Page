@@ -1,6 +1,9 @@
+---
+import CotizacionBtn from "./CotizacionBtn.astro";
+---
+
 <div class="flex flex-wrap justify-between items-center mx-[5vw] gap-6">
   <div class="max-w-[500px]">
-    <span></span>
     <h1 class="text-[90px] mb-5">Servicios de Jardinería Gonzales</h1>
     <p class="text-2xl">
       Pioneros en servicios de jardinería en Republica Dominicana, manteniendo la vanguardia, eficiencia e innovación desde 1980.
@@ -8,9 +11,6 @@
   </div>
   <div class="max-w-[500px]">
     <h2 class="text-[40px] mb-7">Descuidar un patio, es restarle vida a tu hogar, por eso te ayudamos a restaurarlo!</h2>
-    <button
-      class="cursor-pointer bg-[#ffffff] shadow-xs shadow-[#ffaaaa] rounded-3xl duration-200 transition hover:shadow-lg hover:border-8">
-      <a href="#" class="text-3xl py-2.5 px-4 block text-amber-950">Cotiza ahora!</a>
-    </button>
+    <CotizacionBtn />
   </div>
 </div>

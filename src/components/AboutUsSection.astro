@@ -1,16 +1,22 @@
-<section>
-  <h2 id="quienes_somos">Quienes somos?</h2>
-  <p>
-    Somos una empresa dedicada a los servicios de jardinería en general con mas de 45 años de experiencia en el mercado, ofreciendo
-    soluciones e innovación. Con orgullo podemos decir sin temor a equivocarnos que nos hemos convertido en la empresa lider a nuestra área,
-    cubriendo todo territorio dominicano con nuestros servicios.
-  </p>
+---
+import Cards from "./Cards.astro";
+const content1 =
+  "Somos una empresa dedicada a los servicios de jardinería en general con mas de 45 años de experiencia en el mercado, ofreciendo soluciones e innovación. Con orgullo podemos decir sin temor a equivocarnos que nos hemos convertido en la empresa lider a nuestra área, cubriendo todo territorio dominicano con nuestros servicios";
+const content2 =
+  "Nuestra historia se remonta a 1980, cuando el Señor Carlos Gonzales fue despedido de su puesto como ensamblador en una vieja fabrica por recorte de personal. En lugar de rendirse, buscó una nueva forma de ganarse la vida. Al principio, comenzó limpiar patios. Poco a poco fue reconocido tanto por su humildad como por su eficiencia en el trabajo. Así fue creciendo hasta que en un año ya teniaayudantes que lo acompañaban por todo el país. El resto es historia";
+---
 
-  <h3>Nuestros comienzos</h3>
-  <p>
-    Nuestra historia se remonta a 1980, cuando el Señor Carlos Gonzales fue despedido de su puesto como ensamblador en una vieja fabrica por
-    recorte de personal. En lugar de rendirse, buscó una nueva forma de ganarse la vida. Al principio, comenzó limpiar patios. Poco a poco
-    fue reconocido tanto por su humildad como por su eficiencia en el trabajo. Así fue creciendo hasta que en un año ya tenia ayudantes que
-    lo acompañaban por todo el país. El resto es historia.
-  </p>
-</section>
+<div class="min-h-screen w-full bg-white relative">
+  {/* Pastel Wave */}
+  <div
+    class="absolute inset-0 z-0"
+    style={{
+      background: "radial-gradient(100% 100% at 20% 10%, transparent 100%, #2fd5db 100%)",
+    }}>
+    <div class="fondo h-full w-full opacity-30"></div>
+  </div>
+  <section class="z-10 absolute flex flex-col items-center justify-center lg:gap-y-15" id="quienes_somos">
+    <Cards titulo="Quienes somos?" contenido={content1} />
+    <Cards titulo="Nuestros comienzos" contenido={content2} />
+  </section>
+</div>

@@ -1,0 +1,14 @@
+---
+const { encabezado } = Astro.props;
+---
+
+<div tabindex={0} class="collapse collapse-arrow border border-amber-800 w-[50%] bg-linear-90 bg-[#dcfff3] ">
+  <div class="collapse-title text-4xl font-medium">
+    <h3 class="ml-20 bg-w">{encabezado}</h3>
+  </div>
+  <div class="collapse-content">
+    <ul class="*:list-disc *:ml-40 text-2xl">
+      <slot />
+    </ul>
+  </div>
+</div>

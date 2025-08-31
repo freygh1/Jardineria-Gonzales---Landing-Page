@@ -4,6 +4,7 @@ const businessName = "Jardinería Gonzales";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import AboutUsSection from "../components/AboutUsSection.astro";
+import ServicesSection from "../components/ServicesSection.astro";
 ---
 
 <html lang="es">
@@ -22,6 +23,17 @@ import AboutUsSection from "../components/AboutUsSection.astro";
 			<Hero />
 		</Header>
 		<main>
+			<div class="min-h-screen w-full relative">
+				{/* Radial Gradient Background from Bottom */}
+				<div
+					class="absolute inset-0 z-0"
+					style={{
+						background: "radial-gradient(100% 100% at 100% 90%, transparent 100%, #eff2f3  100%)",
+					}}>
+					<div class="fondo h-full w-full opacity-30"></div>
+				</div>
+				<ServicesSection />
+			</div>
 			<AboutUsSection />
 		</main>
 	</body>
