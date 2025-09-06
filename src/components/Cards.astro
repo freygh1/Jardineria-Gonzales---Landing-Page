@@ -1,8 +1,8 @@
----
+---3
 const { titulo, contenido } = Astro.props;
 ---
 
-<article class="lg:w-[40%]  ">
-  <h2 class="my-5 lg:text-5xl text-center underline underline-offset-4 decoration-2">{titulo}</h2>
-  <p class="text-2xl">{contenido}</p>
+<article class="max-sm:w-[80%] sm:w-[70%] md:w-[60%] min-lg:w-[50%]">
+  <h2 class="my-5 max-sm:text-3xl sm:text-3xl lg:text-5xl text-center underline underline-offset-4 decoration-2">{titulo}</h2>
+  <p class="max-sm:text-[4vw] sm:text-[22px] md:text-[26px]">{contenido}</p>
 </article>
