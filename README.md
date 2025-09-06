@@ -21,3 +21,5 @@
 -dos secciones hablando de la historia de la empresa
 
 -Una seccion de contacto
+
+## *El proyecto fue empezado el 20 de agosto del 2025 y terminado el 6 de septiembre 2025* ##
