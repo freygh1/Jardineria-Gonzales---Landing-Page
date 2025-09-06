@@ -12,4 +12,12 @@
 
 -Penpot (para crear el diseño)
 
-## *Mas actualizaciones cuando vaya progresando* ##
+## He terminado el proyecto'.' Tiene las siguientes caracteristicas':' ##
+
+-Contiene seccion de presentacion de servicios
+
+-Un hero con texto de entrada'/'presentacion y un boton que en teoria es para motivar a cotizar
+
+-dos secciones hablando de la historia de la empresa
+
+-Una seccion de contacto
